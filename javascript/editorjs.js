@@ -12,6 +12,6 @@ var x1=document.getElementById("imageme");
   for (var pix of image.values()){
     pix.setRed(255);
     }
-canx=document.getElementById("outputpicbox");
+canx=document.getElementById("resimg");
   image.drawTo(canx);
   }
