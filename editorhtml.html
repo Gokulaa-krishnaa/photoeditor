@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Photo editor</title>
+    <link rel="stylesheet" href="css/editorcss.css">
+  </head>
+<body>
+	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <header><nav>
+  	<a href="editorhtml.html">
+  	<div id="logoimg" alt="logo-img" ></div></a>
+    <div><a href="editorhtml.html"><h1>PHOTO-EDITOR</h1></a></div>
+   </nav>
+  </header>
+  <h3>UPLOAD:</h3>
+  <canvas id="inputimg" class="upimg"></canvas>
+  <ul><li>    
+  UPLOAD THE IMAGE:<input id ="imageme" type="file" multiple="false" accept="image/*" onchange="upload()"></li></ul>
+  <h3>EFFECTS:</h3>
+  <ul>
+  <li>    
+  <input type="button" value="GREYSCALE"
+       onclick="changegrey()"></li>
+  <li>    
+  <input type="button" value="RAINBOW-SHADE"
+       onclick="changered()"></li>
+  <li>    
+  <input type="button" value="DODGER"
+       onclick="changered()"></li>
+    </ul>
+  <h3>PRE-VIEW:</h3>
+  <canvas id="resimg" class="resimg"></canvas>
+<script src="javascript/editorjs.js"></script>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</body>
+</html>

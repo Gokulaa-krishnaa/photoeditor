@@ -1,0 +1,31 @@
+body{
+	background: #D2A1F2;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background: #460046;
+}
+div h1{
+	text-align:left;
+	color: #000000;
+}
+#logoimg {
+	background: url('../images/editorlogo.jpg') no-repeat;
+	width: 150px;
+    height: 150px;
+    margin: 5px 5px 5px 0;
+}
+.upimg{
+	background: #460046; 
+	width: 500px;
+    height: 500px;
+    margin: 5px 5px 5px 0;
+}
+.resimg{
+	background: #460046; 
+	width: 500px;
+    height: 500px;
+    margin: 5px 5px 5px 0;
+}
