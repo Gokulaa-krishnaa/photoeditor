@@ -7,16 +7,27 @@
 <body>
 	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
   <header><nav>
-  	<a href="editorhtml.html">
+  	<a href="editorhtml.html" >
   	<div id="logoimg" alt="logo-img" ></div></a>
-    <div><a href="editorhtml.html"><h1>PHOTO-EDITOR</h1></a></div>
+    <div ><a href="editorhtml.html"><h1>PHOTO-EDITOR</h1></a></div>
    </nav>
   </header>
-  <h3>UPLOAD:</h3>
+  <!--******************************BODY MAIN CONTENT******************************************-->
+  <!--***************UPLOADED-AREA*********************-->
+  <div>
+  	<h3>UPLOAD:</h3>
+  <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
   <canvas id="inputimg" class="upimg"></canvas>
   <ul><li>    
   UPLOAD THE IMAGE:<input id ="imageme" type="file" multiple="false" accept="image/*" onchange="upload()"></li></ul>
-  <h3>EFFECTS:</h3>
+  <h3>EFFECTS:</h3></section>
+  <!--***************PREVIEW-AREA*********************-->
+  <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <h3>PRE-VIEW:</h3>
+  <canvas id="resimg" class="downimg"></canvas>
+  </section>
+  <!--***************OPTIONS AND FILTERS*********************-->
+  <section class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
   <ul>
   <li>    
   <input type="button" value="GREYSCALE"
@@ -27,9 +38,7 @@
   <li>    
   <input type="button" value="DODGER"
        onclick="changered()"></li>
-    </ul>
-  <h3>PRE-VIEW:</h3>
-  <canvas id="resimg" class="resimg"></canvas>
+    </ul></section></div>
 <script src="javascript/editorjs.js"></script>
 <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
 </body>
