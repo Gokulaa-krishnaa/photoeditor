@@ -6,28 +6,31 @@
   </head>
 <body>
 	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-  <header><nav>
-  	<a href="editorhtml.html" >
-  	<div id="logoimg" alt="logo-img" ></div></a>
-    <div ><a href="editorhtml.html"><h1>PHOTO-EDITOR</h1></a></div>
+  <header>
+  	<nav>
+  	<a href="editorhtml.html" ><section id="logoimg" alt="logo-img" ></section></a><!--logoimage-->
+    <section><a href="editorhtml.html"><h1>FILTER-FLARE</h1></a></section>
+    <section id="tagline">Enjoy Magical Clicks</section><!--Title-->
    </nav>
   </header>
   <!--******************************BODY MAIN CONTENT******************************************-->
   <!--***************UPLOADED-AREA*********************-->
-  <div>
-  	<h3>UPLOAD:</h3>
+  <div class="box">
   <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <h3>UPLOAD:</h3>
   <canvas id="inputimg" class="upimg"></canvas>
   <ul><li>    
   UPLOAD THE IMAGE:<input id ="imageme" type="file" multiple="false" accept="image/*" onchange="upload()"></li></ul>
-  <h3>EFFECTS:</h3></section>
+  </section>
   <!--***************PREVIEW-AREA*********************-->
   <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
   <h3>PRE-VIEW:</h3>
   <canvas id="resimg" class="downimg"></canvas>
+  <ul><li><input id ="downloadbutton" type="button" value="DOWNLOAD"></li></ul>
   </section>
   <!--***************OPTIONS AND FILTERS*********************-->
   <section class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+  	<h3>EFFECTS:</h3>
   <ul>
   <li>    
   <input type="button" value="GREYSCALE"
