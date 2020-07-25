@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+	}
 body{
 	background: #D2A1F2;
 }
@@ -6,16 +9,30 @@ a{
 }
 nav{
     background: #460046;
+    height: 150px;
 }
-div h1{
+section h1{
 	text-align:left;
-	color: #000000;
+	color: #6a5d73;
+	font-size: 4.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #ffffff;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.box{
+	padding: 10px;
 }
 #logoimg {
 	background: url('../images/editorlogo.png') no-repeat;
 	width: 150px;
     height: 150px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 5px 5px 20px;
+    float: left;
+}
+#tagline{
+	font-size: 1.8em;
 }
 .upimg{
 	background: #460046; 
@@ -185,7 +202,6 @@ div h1{
 	float:left;
 	border: 5px double black;
 	padding: 50px;
-	overflow: auto;
 	}
 	.col-xs1{
 		width:8.33%;
