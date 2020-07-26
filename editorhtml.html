@@ -18,18 +18,17 @@
   <div class="box">
   <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
   <h3>UPLOAD:</h3>
-  <canvas id="inputimg" class="upimg"></canvas>
-  <ul><li>    
-  UPLOAD THE IMAGE:<input id ="imageme" type="file" multiple="false" accept="image/*" onchange="upload()"></li></ul>
+  <canvas id="inputimg" class="upimg"></canvas>   
+  <div>SELECT A PICTURE</div><input id ="imageme" type="file" multiple="false" accept="image/*" onchange="upload()">
   </section>
   <!--***************PREVIEW-AREA*********************-->
   <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
   <h3>PRE-VIEW:</h3>
   <canvas id="resimg" class="downimg"></canvas>
-  <ul><li><input id ="downloadbutton" type="button" value="DOWNLOAD"></li></ul>
+  <input id ="downloadbutton" type="button" value="DOWNLOAD">
   </section>
   <!--***************OPTIONS AND FILTERS*********************-->
-  <section class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+  <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   	<h3>EFFECTS:</h3>
   <ul>
   <li>    
@@ -37,12 +36,15 @@
        onclick="changegrey()"></li>
   <li>    
   <input type="button" value="RAINBOW-SHADE"
-       onclick="changered()"></li>
+       onclick="changerainbow()"></li>
   <li>    
-  <input type="button" value="DODGER"
+  <input type="button" value="INDIAN-FLAG"
+       onclick="changeindianflag()"></li>
+  <li>    
+  <input type="button" value="RED"
        onclick="changered()"></li>
     </ul></section></div>
 <script src="javascript/editorjs.js"></script>
-<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script text ="text/javasript" src="../common/js/image/SimpleImage.js"></script>
 </body>
 </html>
