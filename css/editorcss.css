@@ -10,6 +10,7 @@ a{
 nav{
     background: #460046;
     height: 150px;
+    border-radius: 1em;
 }
 section h1{
 	text-align:left;
@@ -28,6 +29,9 @@ section h3{
     font-weight: bold;
     margin:10px 40px 10px 40px;
 }
+li{
+	padding: 10px;
+}
 .box{
 	padding: 10px;
 }
@@ -37,6 +41,7 @@ section h3{
     height: 150px;
     margin: 5px 5px 5px 20px;
     float: left;
+    border-radius: 1em;
 }
 #tagline{
 	font-size: 1.8em;
