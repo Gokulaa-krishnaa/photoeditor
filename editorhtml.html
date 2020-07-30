@@ -25,11 +25,12 @@
   <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
   <h3>PRE-VIEW:</h3>
   <canvas id="resimg" class="downimg"></canvas>
-  <div>  <input id ="downloadbutton" type="button" value="DOWNLOAD"></div>
+  <div><a href="images/editorlogo.png" download="images"><input id ="downloadbutton" type="button" value="DOWNLOAD"></a></div>
   </section>
   <!--***************OPTIONS AND FILTERS*********************-->
   <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   	<h3>EFFECTS:</h3>
+  	<section class="effectslist">
   <ul>
   <li>    
   <input type="button" value="GREYSCALE"
@@ -43,7 +44,24 @@
   <li>    
   <input type="button" value="RED"
        onclick="changered()"></li>
-    </ul></section></div>
+    </ul></section>
+    <section class="effectslist">
+  <ul>
+  <li>    
+  <input type="button" value="GREYSCALE"
+       onclick="changegrey()"></li>
+  <li>    
+  <input type="button" value="RAINBOW-SHADE"
+       onclick="changerainbow()"></li>
+  <li>    
+  <input type="button" value="INDIAN-FLAG"
+       onclick="changeindianflag()"></li>
+  <li>    
+  <input type="button" value="RED"
+       onclick="changered()"></li>
+    </ul></section>
+  </section>
+</div>
 <script src="javascript/editorjs.js"></script>
 <script text ="text/javasript" src="../common/js/image/SimpleImage.js"></script>
 </body>
