@@ -58,6 +58,10 @@ li{
     height: 500px;
     margin: 5px 5px 5px 0;
 }
+.effectslist{
+	float: left;
+	width: 50%;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,
