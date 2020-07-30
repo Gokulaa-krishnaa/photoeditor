@@ -1,4 +1,4 @@
-var image= null;
+var image= null;var resimage=null
 function upload(){
   var x1=document.getElementById("imageme");
   image=new SimpleImage(x1);
@@ -7,28 +7,29 @@ function upload(){
 }
 function changegrey()
 {
-  for (var pix of image.values()){
+	resimage= new SimpleImage(image.getWidth(),image.getHeight())
+	for (var pix of image.values()){
+		var x=pix.getX(); var y=pix.getY()
+		resimage.setPixel(x,y,pix)
+	}
+    for (var pix of resimage.values()){
     var avg=(pix.getRed()+pix.getBlue()+pix.getGreen())/3;
     pix.setRed(avg);
     pix.setBlue(avg);
     pix.setGreen(avg);
     }
   var canx=document.getElementById("resimg");
-  image.drawTo(canx);
+  resimage.drawTo(canx);
   }
-function changered()
-{
-	for (var pix of image.values())
-	{
-    pix.setRed(255);
-    }
-    var canx=document.getElementById("resimg");
-    image.drawTo(canx);
-}
 function changeindianflag()
 {
-	var l=image.getHeight();var w=image.getWidth()
-    for (var pix of image.values()){
+	resimage= new SimpleImage(image.getWidth(),image.getHeight())
+	for (var pix of image.values()){
+		var x=pix.getX(); var y=pix.getY()
+		resimage.setPixel(x,y,pix)
+	}
+	var l=resimage.getHeight();var w=resimage.getWidth()
+    for (var pix of resimage.values()){
         var x=pix.getX(); var y=pix.getY()
         if (y<=l/3){
             pix.setRed(255);
@@ -44,5 +45,19 @@ function changeindianflag()
         }
     }
     var canx=document.getElementById("resimg");
-    image.drawTo(canx);
+    resimage.drawTo(canx);
+}
+function changered()
+{
+	resimage= new SimpleImage(image.getWidth(),image.getHeight())
+	for (var pix of image.values()){
+		var x=pix.getX(); var y=pix.getY()
+		resimage.setPixel(x,y,pix)
+	}
+	for (var pix of resimage.values())
+	{
+    pix.setRed(255);
+    }
+    var canx=document.getElementById("resimg");
+    resimage.drawTo(canx);
 }
