@@ -58,9 +58,34 @@ li{
     height: 500px;
     margin: 5px 5px 5px 0;
 }
+.finalimage{
+	background: #460046; 
+	width: 500px;
+    height: 500px;
+    margin: 5px 5px 5px 0;
+}
 .effectslist{
 	float: left;
 	width: 50%;
+}
+.button {
+  background-color: #460046;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+#backbutton{
+  padding: 5px;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+#finalimg{
+	margin-left: 20em;
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -74,7 +99,11 @@ li{
 	}
 	#downloadbutton{
 	margin-left: 15em;
-	margin-top: 32px;
+	margin-top: 27px;
+    }
+    #finalpage-downloadbutton{
+	margin-left: 38em;
+	margin-top: 27px;
     }
     #imageme{
 	margin-left: 15em;
@@ -192,6 +221,13 @@ li{
     }
     .downimg{
     margin-left: 9.1em;
+    }
+    .finalimage{
+    margin-left: 2.1em;	
+    }
+    #finalpage-downloadbutton{
+	margin-left: 25em;
+	margin-top: 27px;
     }
     section h3{
 	text-align:center;
