@@ -61,3 +61,21 @@ function changered()
     var canx=document.getElementById("resimg");
     resimage.drawTo(canx);
 }
+function changedodger(){
+	resimage= new SimpleImage(image.getWidth(),image.getHeight())
+	for (var pix of image.values()){
+		var x=pix.getX(); var y=pix.getY()
+		resimage.setPixel(x,y,pix)
+	}
+	for (var pix of resimage.values()){
+		var blue=pix.getBlue()
+		pix.setBlue(blue+20)
+
+	}
+	var canx=document.getElementById("resimg");
+    resimage.drawTo(canx);
+}
+function setfinalimage(){
+  var canx=document.getElementById("finalimg");
+  resimage.drawTo(canx);
+}
