@@ -255,10 +255,18 @@ li{
 	}
 	/*********************************MAIN_PAGE_FORMATS-BEGINS***********************************/
     .upimg{ 
-	margin-left: 9.1em;/*trbl*/
+        background: #460046; 
+	    width: 700px;
+        height: 800px;
+        margin: 5px 5px 5px 0;
+	    margin-left: 4.5em;/*trbl*/
     }
     .downimg{
-    margin-left: 9.1em;
+    	background: #460046; 
+	    width: 700px;
+        height: 800px;
+        margin: 5px 5px 5px 0;
+        margin-left: 4.5em;
     }
     .finalimage{
     margin-left: 2.1em;	
@@ -280,7 +288,7 @@ li{
     }
     /*********************************MAIN_PAGE_FORMATS-ENDS***********************************/
     
-    /*********************************DOWNLOAD_PAGE_FORMATS-BEGINS***********************************/
+    /*********************************DOWNLOAD_PAGE_FORMATS-BEGINS*****************************/
     #finalimg{
 	margin-left: 10em;
     }
@@ -299,7 +307,7 @@ li{
      float: right;
     }
     
-    /*********************************DOWNLOAD_PAGE_FORMATS-ENDS***********************************/
+    /*********************************DOWNLOAD_PAGE_FORMATS-ENDS*******************************/
 	.col-sm-1{
 		width:8.33%;
 	}
