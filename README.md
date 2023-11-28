@@ -1,2 +1,3 @@
-# photoeditor
-edit and filter
+# Photo Editor App
+
+A simple application developed to edit photos
